@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - Yourlist</title>
+  
+  <style>
+    /* Search and Filter Section */
+.search-filter-container {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.filter-dropdown {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+#productCount {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar, .filter-dropdown {
+    width: 100%;
+  }
+}
+  </style>
+  
+<link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="scriptmarke place.js">
+<link rel="stylesheet" href="Yourlist.html">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Yourlist</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="index.html#account">Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search and Filter Section -->
+  <div class="search-filter-container">
+    <div class="search-bar-container">
+      <input type="text" id="searchInput" placeholder="Search for a product..." class="search-bar">
+      <select id="categoryFilter" class="filter-dropdown">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="phones">Phones</option>
+        <option value="headsets">Headsets</option>
+        <option value="chargers">Chargers</option>
+        <option value="laptops">Laptops</option>
+        <option value="hardware">Hardware</option>
+        <option value="accessories">Accessories</option>
+        <option value="cameras">Cameras</option>
+        <option value="gaming">Gaming</option>
+      </select>
+    </div>
+    <p id="productCount">Showing 30 products</p>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="product-grid" id="productGrid">
+    <!-- Products will be dynamically added here -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Yourlist. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

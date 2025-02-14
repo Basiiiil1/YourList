@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yourlist - General Marketplace</title>
+  <style>
+    /* Reset default styles */
+    body, h1, h2, p, ul, li, a {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: #0073e6;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Marketplace Section */
+    .marketplace {
+      padding: 50px 20px;
+      background: #f4f4f4;
+    }
+
+    .marketplace h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      font-size: 24px;
+      margin: 15px 0;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .product-card button {
+      background: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .product-card button:hover {
+      background: #005bb5;
+    }
+
+    /* Account Section */
+    .account {
+      padding: 50px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .account h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .account-types {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .account-type {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .account-type h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .account-type p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .account-type button {
+      background: #0073e6;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .account-type button:hover {
+      background: #005bb5;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        margin-top: 10px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .account-types {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+<link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="scriptmarke place.js">
+<link rel="stylesheet" href="Yourlist.html">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Yourlist</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#marketplace">Marketplace</a></li>
+      <li><a href="#account">Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Yourlist</h1>
+    <p>Your one-stop marketplace for buying and selling anything!</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Yourlist</h2>
+    <p>
+      Yourlist is a general marketplace where anyone can sell their products. We take a small commission for every completed sale, ensuring a seamless experience for both buyers and sellers.
+    </p>
+  </section>
+
+  <!-- Marketplace Section -->
+  <section class="marketplace" id="marketplace">
+    <h2>Explore Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$20.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$15.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>$25.00</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Account Section -->
+  <section class="account" id="account">
+    <h2>Create an Account</h2>
+    <div class="account-types">
+      <div class="account-type">
+        <h3>Regular Account</h3>
+        <p>Browse and buy products with ease.</p>
+        <button>Sign Up</button>
+      </div>
+      <div class="account-type">
+        <h3>Seller Account</h3>
+        <p>Sell your products and reach a wide audience.</p>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Yourlist. All rights reserved.</p>
+  </footer>
+</body>
+</html>
